@@ -1,10 +1,5 @@
-#v0.2 curdirWordlists.py
-#To Do:
-#1. Automate process of downloading subtitles from Youtube
-#---maybe just have uesr input URL to video, and this will download subs and translate them into a wordlist
-#2. Have a combination function for multiple wordlists
-#3. Complete cross-platform functionality for Windows. Currently only functions properly in Linux
-
+#Stack script
+#testing out SO script with python
 #importing modules
 import time
 import sys
@@ -18,7 +13,7 @@ platform = sys.platform
 if 'linux' in platform:
 	files = [f for f in os.listdir('.') if os.path.isfile(f)]
 	for f in files:
-		if f != 'curdirWordlists.py':
+		if f != 'translate_curdir.py':
 			print f
 			# open file for reading words
 			file = open(f, 'r')
@@ -28,7 +23,7 @@ if 'linux' in platform:
 			file.close()
 
 			#create file and set stdout to point at it
-			file = open('Translated_' + f + '' +time.strftime("%x").replace('/', '.')+'_' +time.strftime("%X").replace(':', '.')+'.txt', "w") 
+			file = open('Translated_' + f + '_' +time.strftime("%x").replace('/', '.')+'_' +time.strftime("%X").replace(':', '.')+'.txt', "w") 
 			sys.stdout = file
 
 			# replaces anything that is not a lowercase letter, a space, or an apostrophe with a space:
@@ -41,9 +36,9 @@ if 'linux' in platform:
 				w = w.rstrip(',')
 				w = w.rstrip('\'')
 
+		cleanlist = Set(words)
+		for i in cleanlist:
+			print i
+
 else:
 	print "this OS is Windows..."
-
-cleanlist = Set(words)
-for i in cleanlist:
-	print i
