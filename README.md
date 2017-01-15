@@ -7,8 +7,6 @@ Place this python script (curdirWordlists.py) into a directory that contains all
 
 Functionality to be added:
 
-1. Add a function to concatenate and deduplicate all wordlists into a singular wordlist output file
+1. Implement cross-platform function for Windows users
 
-2. Implement cross-platform function for Windows users
-
-3. Create function that will download the subtitle from Youtube for you, so you don't have to feed files to the script.  Have user input URL for video they want translated into wordlist, instead of having to figure out a way to do it, list using an online utility or Chrome extension.
+2. Create function that will download the subtitle from Youtube for you, so you don't have to feed files to the script.  Have user input URL for video they want translated into wordlist, instead of having to figure out a way to do it, list using an online utility or Chrome extension.
