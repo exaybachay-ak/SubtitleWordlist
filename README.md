@@ -3,7 +3,7 @@ Does what it says.. feed a subtitle file downloaded from Youtube and this will o
 
 USAGE:
 
-Place this python script (curdirWordlists.py) into a directory that contains all subtitle files you would like to translate into wordlists.  Run curdirWordlists.py.  This currently only works for Linux.
+Place this python script (wordlist.py) into a directory that contains all subtitle files you would like to translate into a wordlist.  Run wordlist.py and it will output a file called "wordlist.txt".  This currently only works for Linux.
 
 Functionality to be added:
 
