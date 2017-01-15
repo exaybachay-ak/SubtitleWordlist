@@ -13,7 +13,7 @@ wordlist = []
 if 'linux' in platform:
 	files = [f for f in os.listdir('.') if os.path.isfile(f)]
 	for f in files:
-		if f != 'wordlist.py':
+		if not any(value in f for value in (".py", ".c", ".sh", ".exe", ".zip")):
 			# open input file to read and work with	
 			file = open(f, 'r')
 
