@@ -1,5 +1,4 @@
 #importing modules
-import time
 import sys
 import re
 import os
